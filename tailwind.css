@@ -1,0 +1,153 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --azul: rgba(34, 116, 165, 1);
+  --azul-claro: rgba(140, 195, 232, 1);
+  --azul-marinho: rgba(0, 59, 115, 1);
+  --branco: rgba(241, 244, 248, 1);
+  --dourado: rgba(194, 164, 109, 1);
+  --h1-lato-font-family: "Lato", Helvetica;
+  --h1-lato-font-size: 48px;
+  --h1-lato-font-style: normal;
+  --h1-lato-font-weight: 400;
+  --h1-lato-letter-spacing: 6.7200000000000015px;
+  --h1-lato-line-height: normal;
+  --h2-lato-font-family: "Lato", Helvetica;
+  --h2-lato-font-size: 40px;
+  --h2-lato-font-style: normal;
+  --h2-lato-font-weight: 400;
+  --h2-lato-letter-spacing: 5.6px;
+  --h2-lato-line-height: normal;
+  --h3-lato-font-family: "Lato", Helvetica;
+  --h3-lato-font-size: 33px;
+  --h3-lato-font-style: normal;
+  --h3-lato-font-weight: 400;
+  --h3-lato-letter-spacing: 4.62px;
+  --h3-lato-line-height: normal;
+  --h3-playfair-font-family: "Playfair Display", Helvetica;
+  --h3-playfair-font-size: 33px;
+  --h3-playfair-font-style: normal;
+  --h3-playfair-font-weight: 400;
+  --h3-playfair-letter-spacing: 4.62px;
+  --h3-playfair-line-height: normal;
+  --h5-lato-font-family: "Lato", Helvetica;
+  --h5-lato-font-size: 23px;
+  --h5-lato-font-style: normal;
+  --h5-lato-font-weight: 400;
+  --h5-lato-letter-spacing: 3.22px;
+  --h5-lato-line-height: normal;
+  --h5-playfair-font-family: "Playfair Display", Helvetica;
+  --h5-playfair-font-size: 23px;
+  --h5-playfair-font-style: normal;
+  --h5-playfair-font-weight: 400;
+  --h5-playfair-letter-spacing: 3.22px;
+  --h5-playfair-line-height: normal;
+  --h6-lato-font-family: "Lato", Helvetica;
+  --h6-lato-font-size: 19px;
+  --h6-lato-font-style: normal;
+  --h6-lato-font-weight: 400;
+  --h6-lato-letter-spacing: 2.66px;
+  --h6-lato-line-height: normal;
+  --h6-playfair-font-family: "Playfair Display", Helvetica;
+  --h6-playfair-font-size: 19px;
+  --h6-playfair-font-style: normal;
+  --h6-playfair-font-weight: 400;
+  --h6-playfair-letter-spacing: 2.66px;
+  --h6-playfair-line-height: normal;
+  --p-lato-font-family: "Lato", Helvetica;
+  --p-lato-font-size: 16px;
+  --p-lato-font-style: normal;
+  --p-lato-font-weight: 400;
+  --p-lato-letter-spacing: 2.24px;
+  --p-lato-line-height: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
