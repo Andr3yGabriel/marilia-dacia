@@ -26,7 +26,7 @@ export const FooterSection = (): JSX.Element => {
         <div className="flex items-center">
           <img
             alt="Logo Marília Dácia" // Alt text descritivo
-            src="/captura-de-tela-2025-01-13-a-s-07-45-07-1--traced-.svg" // Verifique o caminho
+            src="/favicon.svg" // Verifique o caminho
             className="w-[54px] h-[52px] flex-shrink-0"
           />
           <div className="ml-3 text-gray-100"> {/* Cor padrão Tailwind */}
