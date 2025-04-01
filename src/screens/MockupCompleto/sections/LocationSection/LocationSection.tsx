@@ -123,7 +123,7 @@ export const LocationSection = (): JSX.Element => {
           </div>
 
           {/* Coluna da Direita (Mapa) */}
-          <div className="flex flex-col items-center lg:items-start w-full">
+          <div className="flex flex-col items-center w-full">
             {/* Título do Mapa (tamanho e margem ajustados) */}
             <h2 className="text-azul-marinho font-h3-lato text-3xl mb-8"> {/* Aumentado tamanho e margem inferior */}
               Jales - SP
@@ -144,7 +144,7 @@ export const LocationSection = (): JSX.Element => {
               ></iframe>
             </div>
             {/* Endereço Abaixo do Mapa */}
-            <p className="text-center lg:text-left text-azul-marinho mt-4 font-h6-lato w-full max-w-[600px] lg:max-w-none mx-auto lg:mx-0">
+            <p className="text-center text-azul-marinho mt-4 font-h6-lato w-full max-w-[600px] lg:max-w-none mx-auto lg:mx-0">
               R. Doze, 2047 - Centro
             </p>
           </div>

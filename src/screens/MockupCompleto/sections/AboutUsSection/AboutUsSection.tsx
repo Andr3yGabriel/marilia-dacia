@@ -1,5 +1,4 @@
 import { CheckCircleIcon } from "lucide-react";
-import { Card, CardContent } from "../../../../components/ui/card";
 import { Separator } from "../../../../components/ui/separator";
 
 export const AboutUsSection = (): JSX.Element => {
@@ -8,33 +7,18 @@ export const AboutUsSection = (): JSX.Element => {
     { id: 2, text: "RQE Pneumologia: 61.680" },
   ];
 
-  // Calculando a proporção da imagem original para usar no aspect-ratio
-  // Se 486x783px, a proporção é 486/783. Podemos usar isso diretamente.
-  // const aspectRatio = "486/783"; // Ou uma aproximação como "9/14" ou "2/3" se preferir
-
   return (
-    // Adicionado overflow-hidden para conter elementos absolutos se necessário
     <section className="relative w-full overflow-hidden bg-azul-marinho py-16 md:py-24" style={{ background: "linear-gradient(rgba(0, 59, 115, 0.8), rgba(0, 59, 115, 0.8)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #003b73" }}>
-      {/* Ajustado gap, alinhamento e justificação para melhor adaptação */}
       <div className="container mx-auto flex flex-col lg:flex-row lg:items-start items-center justify-center lg:justify-between gap-12 lg:gap-16">
-
-        {/* --- Coluna da Imagem --- */}
-        {/* Definindo larguras responsivas e mantendo 'relative' para as elipses */}
-        <div className="relative w-full max-w-md lg:max-w-none lg:w-5/12 mx-auto lg:mx-0 order-1 lg:order-none"> {/* Ordem para mobile opcional */}
-
-          {/* Container da Imagem Principal - Agora Responsivo */}
+        <div className="relative w-full max-w-md lg:max-w-none lg:w-5/12 mx-auto lg:mx-0 order-1 lg:order-none">
           <div
-            className="w-full aspect-[486/783] rounded-[15px] bg-cover bg-center shadow-lg mx-auto" // Usa aspect-ratio, w-full, removido h/w fixo e pos. absoluto
+            className="w-full aspect-[486/783] rounded-[15px] bg-cover bg-center shadow-lg mx-auto"
             style={{ backgroundImage: "url(/frame-48.png)" }}
-            aria-label="Doutora Marília Dácia" // Adiciona um label para acessibilidade
+            aria-label="Doutora Marília Dácia"
           />
 
-          {/* Elipses Decorativas - Escondidas em mobile, pos. absoluta em desktop */}
-          {/* Posicionamento ajustado para ser relativo ao container da coluna */}
-          {/* Usar z-[-1] para tentar colocar atrás da imagem se sobrepor */}
           <img
-            className="hidden lg:block absolute w-24 h-[95px] -top-8 -left-10 z-[-1] pointer-events-none" // Ajustado pos, z-index, pointer-events
-            alt="" // Alt vazio para decoração
+            className="hidden lg:block absolute w-24 h-[95px] -top-8 -left-10 z-[-1] pointer-events-none"
             src="/elipses.png"
           />
           <img

@@ -49,65 +49,39 @@ const services = [
 export const ServicesSection = (): JSX.Element => {
   return (
     <section
-      className="relative w-full py-20"
+      className="relative w-full px-5 py-20"
       style={{
-        // Mantido o background original
         background: "linear-gradient(rgba(241, 244, 248, 1), rgba(241, 244, 248, 1)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #F1F4F8"
       }}
     >
       <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center gap-6 mb-16">
-          {/* Título da Seção */}
-          <h2 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
+        <div className="flex flex-col items-center gap-6 mb-16 sm:px-5">
+          <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
             Nossas Especialidades
-          </h2>
+          </h1>
 
-          {/* Descrição da Seção */}
           <p className="max-w-[450px] font-p-lato font-[number:var(--p-lato-font-weight)] text-azul-marinho text-[length:var(--p-lato-font-size)] text-center tracking-[var(--p-lato-letter-spacing)] leading-[var(--p-lato-line-height)] [font-style:var(--p-lato-font-style)]">
             Desejamos que você se sinta seguro(a) e confortável com os cuidados
             recebidos.
           </p>
         </div>
 
-        {/* Container do Grid (com linhas divisórias adicionadas) */}
-        {/* ----- LINHA MODIFICADA ABAIXO ----- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16 max-w-6xl mx-auto md:divide-x md:divide-azul-marinho/30">
-          {/* ----- FIM DA LINHA MODIFICADA ----- */}
 
           {services.map((service) => (
-            // Adicionado padding horizontal ao card para acomodar a linha divisória sem colar no conteúdo
-            // ----- LINHA MODIFICADA ABAIXO ----- */}
             <Card key={service.id} className="border-none shadow-none bg-transparent md:px-4 lg:px-8">
-              {/* ----- FIM DA LINHA MODIFICADA ----- */}
-              {/* Ajustado padding interno e gaps */}
-              {/* ----- LINHA MODIFICADA ABAIXO ----- */}
-              <CardContent className="flex flex-col items-center justify-start text-center gap-4 p-0 md:p-4"> {/* Reduzido gap principal, removido padding geral e centralizado texto */}
-                {/* ----- FIM DA LINHA MODIFICADA ----- */}
-
-                {/* Ícone (tamanho reduzido e gap ajustado) */}
-                {/* ----- LINHA MODIFICADA ABAIXO ----- */}
-                <div className="flex flex-col items-center gap-2 w-full mb-2"> {/* Reduzido gap abaixo do ícone */}
+              <CardContent className="flex flex-col items-center justify-start text-center gap-4 p-0 md:p-4">
+                <div className="flex flex-col items-center gap-2 w-full mb-2">
                   <img
-                    className="h-[60px] w-auto" // Altura do ícone reduzida
+                    className="h-[60px] w-auto"
                     alt={service.title}
                     src={service.icon}
                   />
                 </div>
-                {/* ----- FIM DA LINHA MODIFICADA ----- */}
-
-                {/* Título (tamanho de fonte ajustado) */}
-                {/* ----- LINHA MODIFICADA ABAIXO ----- */}
-                {/* Adicionado text-xl para reduzir tamanho, mantendo a fonte original */}
                 <h3 className="font-h2-lato text-xl font-[number:var(--h2-lato-font-weight)] text-azul-marinho text-[length:var(--h2-lato-font-size)] text-center tracking-[var(--h2-lato-letter-spacing)] leading-[var(--h2-lato-line-height)] [font-style:var(--h2-lato-font-style)]">
-                  {/* ----- FIM DA LINHA MODIFICADA ----- */}
                   {service.title}
                 </h3>
-
-                {/* Descrição (tamanho de fonte ajustado) */}
-                {/* ----- LINHA MODIFICADA ABAIXO ----- */}
-                {/* Adicionado text-sm para reduzir tamanho, mantendo a fonte original */}
-                <p className="font-h6-playfair text-sm font-[number:var(--h6-playfair-font-weight)] text-azul-marinho text-[length:var(--h6-playfair-font-size)] text-center tracking-[var(--h6-playfair-letter-spacing)] leading-[var(--h6-playfair-line-height)] [font-style:var(--h6-playfair-font-style)]">
-                  {/* ----- FIM DA LINHA MODIFICADA ----- */}
+                <p className="font-h6-playfair text-sm font-[number:var(--h6-playfair-font-weight)] text-azul-marinho text-[length:var(--h6-playfair-font-size)] text-justify [hyphens:auto] tracking-[var(--h6-playfair-letter-spacing)] leading-[var(--h6-playfair-line-height)] [font-style:var(--h6-playfair-font-style)]">
                   {service.description}
                 </p>
               </CardContent>
