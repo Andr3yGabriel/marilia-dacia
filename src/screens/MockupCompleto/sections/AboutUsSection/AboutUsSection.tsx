@@ -14,7 +14,7 @@ export const AboutUsSection = (): JSX.Element => {
 
   return (
     // Adicionado overflow-hidden para conter elementos absolutos se necessário
-    <section className="relative w-full overflow-hidden bg-azul-marinho py-16 md:py-24">
+    <section className="relative w-full overflow-hidden bg-azul-marinho py-16 md:py-24" style={{ background: "linear-gradient(rgba(0, 59, 115, 0.8), rgba(0, 59, 115, 0.8)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #003b73" }}>
       {/* Ajustado gap, alinhamento e justificação para melhor adaptação */}
       <div className="container mx-auto flex flex-col lg:flex-row lg:items-start items-center justify-center lg:justify-between gap-12 lg:gap-16">
 
