@@ -1,6 +1,5 @@
 import { Card, CardContent } from "../../../../components/ui/card";
 
-// Define service data for mapping
 const services = [
   {
     id: 1,
@@ -56,11 +55,11 @@ export const ServicesSection = (): JSX.Element => {
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-6 mb-16 sm:px-5">
-          <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
+          <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h3-lato-font-size)] md:text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
             Nossas Especialidades
           </h1>
 
-          <p className="max-w-[450px] font-p-lato font-[number:var(--p-lato-font-weight)] text-azul-marinho text-[length:var(--p-lato-font-size)] text-center tracking-[var(--p-lato-letter-spacing)] leading-[var(--p-lato-line-height)] [font-style:var(--p-lato-font-style)]">
+          <p className="max-w-[450px] font-p-lato font-[number:var(--p-lato-font-weight)] text-azul-marinho text-[length:var(--p-lato-font-size)] md:text-[length:var(--h5-lato-font-size)] text-center tracking-[var(--p-lato-letter-spacing)] leading-[var(--p-lato-line-height)] [font-style:var(--p-lato-font-style)]">
             Desejamos que você se sinta seguro(a) e confortável com os cuidados
             recebidos.
           </p>

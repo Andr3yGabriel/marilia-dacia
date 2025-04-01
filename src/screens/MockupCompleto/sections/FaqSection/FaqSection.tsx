@@ -33,9 +33,9 @@ export const FaqSection = (): JSX.Element => {
   return (
     <section className="relative w-full py-24" style={{ background: "linear-gradient(rgba(0, 59, 115, 0.8), rgba(0, 59, 115, 0.8)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #003b73" }}>
       <div className="container mx-auto px-4">
-        <h2 className="text-center font-h1-lato font-[number:var(--h1-lato-font-weight)] text-branco text-[length:var(--h1-lato-font-size)] tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)] mb-16">
+        <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-branco text-[length:var(--h2-lato-font-size)] md:text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)] mb-16">
           Perguntas frequentes
-        </h2>
+        </h1>
 
         <div className="max-w-5xl mx-auto">
           <Accordion type="single" collapsible className="space-y-8">
@@ -46,7 +46,7 @@ export const FaqSection = (): JSX.Element => {
                 className="bg-white rounded-[20px] px-[25px] py-[21px] border-none"
               >
                 <AccordionTrigger className="flex justify-between items-center w-full no-underline hover:no-underline">
-                  <span className="font-h3-lato font-[number:var(--h3-lato-font-weight)] text-azul text-[length:var(--h3-lato-font-size)] tracking-[var(--h3-lato-letter-spacing)] leading-[var(--h3-lato-line-height)] [font-style:var(--h3-lato-font-style)]">
+                  <span className="font-h3-lato font-[number:var(--h3-lato-font-weight)] text-azul text-[length:var(--h5-lato-font-size)] md:text-[length:var(--h3-lato-font-size)] tracking-[var(--h3-lato-letter-spacing)] leading-[var(--h3-lato-line-height)] [font-style:var(--h3-lato-font-style)]">
                     {item.question}
                   </span>
                 </AccordionTrigger>

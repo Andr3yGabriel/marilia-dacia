@@ -103,10 +103,10 @@ const GallerySection: React.FC = () => {
   return (
     <div className="w-full mx-auto py-12 px-4" style={{ background: "linear-gradient(rgba(239, 239, 239, 1), rgba(239, 239, 239, 1)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #EFEFEF" }}>
       <div className="flex flex-col items-center gap-6 mb-16 px-4">
-        <h2 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
+        <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h2-lato-font-size)] md:text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
           Nosso Consultório
-        </h2>
-        <p className="max-w-[750px] font-h6-lato font-[number:var(--h6-lato-font-weight)] text-azul-marinho text-[length:var(--h6-lato-font-size)] text-center tracking-[var(--h6-lato-letter-spacing)] leading-[var(--h6-lato-line-height)] [font-style:var(--h6-lato-font-style)]">
+        </h1>
+        <p className="max-w-[450px] font-p-lato font-[number:var(--p-lato-font-weight)] text-azul-marinho text-[length:var(--p-lato-font-size)] text-center tracking-[var(--p-lato-letter-spacing)] leading-[var(--p-lato-line-height)] [font-style:var(--p-lato-font-style)]">
           Cada detalhe do nosso espaço foi pensado para que você se sinta bem. Nossas instalações foram
           cuidadosamente planejadas para proporcionar bem-estar e segurança, garantindo a melhor
           experiência para nossos pacientes.

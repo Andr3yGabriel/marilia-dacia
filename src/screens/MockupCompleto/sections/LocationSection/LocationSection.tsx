@@ -19,7 +19,7 @@ export const LocationSection = (): JSX.Element => {
     {
       icon: "/mail.png",
       title: "Nosso e-mail",
-      content: "contato@castardodacia.com.br",
+      content: "dramarilia.contato@gmail.com",
       alt: "Email icon",
       isLink: false,
     },
@@ -43,7 +43,7 @@ export const LocationSection = (): JSX.Element => {
     <section className="relative w-full py-5">
       <div className="flex flex-col items-center gap-16 mb-16 px-4">
         {/* Título da Seção */}
-        <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
+        <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h2-lato-font-size)] md:text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
           Nossos Contatos
         </h1>
 
@@ -73,8 +73,7 @@ export const LocationSection = (): JSX.Element => {
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-azul-marinho font-p-lato hover:underline hover:text-dourado transition-colors"
-                          style={{ textDecoration: "none" }}
+                          className="inline-block bg-dourado text-branco font-p-lato py-1 px-3 rounded-[5px] shadow-[0px_2px_3px_#00000030] transition duration-300 ease-in-out transform hover:bg-dourado/90 hover:scale-105 active:scale-95"
                         >
                           {item.content}
                         </a>

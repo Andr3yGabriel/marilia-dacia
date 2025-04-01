@@ -66,7 +66,7 @@ export const HeaderSection = (): JSX.Element => {
         className="fixed top-0 left-0 right-0 w-full bg-[#003b7366] shadow-[0px_4px_4px_#00000040] backdrop-blur-sm z-50"
         style={{ height: `${headerHeight}px` }} // Padding removido daqui e colocado no container interno
       >
-        <div className="flex items-center justify-between h-full max-w-[1275px] mx-auto px-4 sm:px-6 lg:px-8"> {/* Adicionado padding responsivo */}
+        <div className="flex items-center justify-between h-full max-w-[1275px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Logo - mantido como está */}
           <motion.div
             className="flex items-center"
@@ -80,10 +80,10 @@ export const HeaderSection = (): JSX.Element => {
               src="favicon.svg"
             />
             <div className="ml-[11px]">
-              <div className="[font-family:'Playfair_Display_SC',Helvetica] font-normal text-[#f1f4f8] text-2xl text-center tracking-[0] leading-[normal]">
+              <div className="[font-family:'Playfair_Display_SC',Helvetica] font-normal text-[#f1f4f8] text-[23px] md:text[33] text-center tracking-[0] leading-[normal]">
                 Marília Dácia
               </div>
-              <div className="[font-family:'Lato',Helvetica] font-normal text-[#f1f4f8] text-[10.5px] tracking-[0.87px] leading-[normal]">
+              <div className="[font-family:'Lato',Helvetica] font-normal text-[#f1f4f8] text-[12px] md:text[22] tracking-[0.87px] leading-[normal]">
                 Pneumologista
               </div>
             </div>
@@ -115,7 +115,7 @@ export const HeaderSection = (): JSX.Element => {
           </nav>
 
           {/* Ícone WhatsApp - movido para ficar junto com o botão do menu em telas menores */}
-          <div className="flex items-center gap-4"> {/* Container para agrupar botão e Wpp */}
+          <div className="flex items-center gap-1"> {/* Container para agrupar botão e Wpp */}
             <motion.a
               href="https://wa.me/5517996623823"
               target="_blank"

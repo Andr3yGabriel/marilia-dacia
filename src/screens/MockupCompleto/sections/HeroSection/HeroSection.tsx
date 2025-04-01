@@ -7,7 +7,7 @@ export const HeroSection = (): JSX.Element => {
     <section
       className="relative w-full h-screen [background:linear-gradient(180deg,rgba(0,59,115,0.4)_0%,rgba(0,0,0,0)_100%),linear-gradient(90deg,rgba(0,59,115,0.65)_0%,rgba(241,244,248,0)_100%),url(/wireframe---landing-page-mobile.jpg)_50%_50%_/_cover] md:[background:linear-gradient(180deg,rgba(0,59,115,0.4)_0%,rgba(0,0,0,0)_100%),linear-gradient(90deg,rgba(0,59,115,0.65)_0%,rgba(241,244,248,0)_100%),url(/wireframe---landing-page.png)_50%_50%_/_cover] bg-center bg-cover"
     >
-      <div className="container flex flex-col w-full max-w-[608px] items-start gap-8 absolute bottom-12 md:bottom-16 left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 md:ml-16 lg:ml-24 px-4 md:px-0 sm:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <div className="container flex flex-col w-full max-w-[608px] items-start gap-8 absolute bottom-12 md:bottom-16 left-1/2 md:left-auto md:translate-x-0 md:ml-16 lg:ml-24 px-4 md:px-0 top-1/2 -translate-y-1/2 -translate-x-1/2 ">
         <h1 className="self-stretch text-branco text-4xl md:text-5xl tracking-[1.23px] leading-tight md:leading-normal text-center md:text-left font-h1-lato">
           Nossa clínica entende que não há bem maior do que a{" "}
           <span className="font-bold">vida</span>

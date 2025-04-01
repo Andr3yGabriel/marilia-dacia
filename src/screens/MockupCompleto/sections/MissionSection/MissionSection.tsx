@@ -33,11 +33,10 @@ export const MissionSection = (): JSX.Element => {
   return (
     <section className="relative w-full py-24" style={{ background: "linear-gradient(rgba(241, 244, 248, 0.8), rgba(241, 244, 248, 0.8)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #F1F4F8" }}>
       <div className="flex flex-col items-center gap-6 mb-16 px-4">
-        <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
+        <h1 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h2-lato-font-size)] md:text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
           Por que escolher nossa clínica?
         </h1>
-        {/* --- Estilos de fonte originais restaurados --- */}
-        <p className="max-w-[750px] font-h6-lato font-[number:var(--h6-lato-font-weight)] text-azul-marinho text-[length:var(--h6-lato-font-size)] text-center tracking-[var(--h6-lato-letter-spacing)] leading-[var(--h6-lato-line-height)] [font-style:var(--h6-lato-font-style)]">
+        <p className="max-w-[450px] font-p-lato font-[number:var(--p-lato-font-weight)] text-azul-marinho text-[length:var(--p-lato-font-size)] text-center tracking-[var(--p-lato-letter-spacing)] leading-[var(--p-lato-line-height)] [font-style:var(--p-lato-font-style)]">
           Oferecemos atendimento humanizado, consultas especializadas em
           pneumologia e uma equipe dedicada ao seu bem-estar. Aqui, sua saúde
           respiratória está em boas mãos!
@@ -96,8 +95,7 @@ export const MissionSection = (): JSX.Element => {
       <div className="flex justify-center mt-8 px-4">
         <Button
           asChild
-          className="bg-azul-marinho text-branco hover:bg-azul-marinho/90 rounded-[5px] px-8 py-4 shadow-md"
-          style={{ padding: "30px" }}
+          className="bg-azul-marinho text-branco hover:bg-azul-marinho/90 rounded-[5px] px-8 py-4 shadow-md h-auto transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 w-full"
         >
           <a
             href={whatsappLink}
@@ -105,7 +103,7 @@ export const MissionSection = (): JSX.Element => {
             rel="noopener noreferrer"
           >
             {/* --- Estilos de fonte originais restaurados --- */}
-            <span className="font-h3-playfair font-[number:var(--h3-playfair-font-weight)] text-[length:var(--h3-playfair-font-size)] text-center tracking-[var(--h3-playfair-letter-spacing)] leading-[var(--h3-playfair-line-height)] [font-style:var(--h3-playfair-font-style)]">
+            <span className="font-h3-playfair font-[number:var(--h3-playfair-font-weight)] text-[length:var(--h5-playfair-font-size)] md:text-[length:var(--h3-playfair-font-size)] text-center tracking-[var(--h3-playfair-letter-spacing)] leading-[var(--h3-playfair-line-height)] [font-style:var(--h3-playfair-font-style)]">
               Reserve seu horário
             </span>
           </a>
