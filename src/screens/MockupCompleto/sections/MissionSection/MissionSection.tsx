@@ -95,7 +95,7 @@ export const MissionSection = (): JSX.Element => {
       <div className="flex justify-center mt-8 px-4">
         <Button
           asChild
-          className="bg-azul-marinho text-branco hover:bg-azul-marinho/90 rounded-[5px] px-8 py-4 shadow-md h-auto transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 w-full"
+          className="bg-azul-marinho text-branco hover:bg-azul-marinho/90 rounded-[5px] px-8 py-4 shadow-md h-auto transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 w-full md:w-[600px]"
         >
           <a
             href={whatsappLink}
