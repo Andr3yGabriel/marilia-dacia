@@ -50,7 +50,7 @@ export const MissionSection = (): JSX.Element => {
             key={card.id}
             className="bg-white rounded-xl shadow-[0px_4px_4px_#00000040] w-[342px] max-w-full"
           >
-            <CardContent className="flex flex-col items-center justify-start gap-[22px] p-8 h-full">
+            <CardContent className="flex flex-col items-center justify-center gap-[22px] p-8 h-full">
               {/* Lógica do Ícone */}
               {card.iconType === "svg" ? (
                 <div className="relative w-[78px] h-[78px] flex-shrink-0">
@@ -95,7 +95,7 @@ export const MissionSection = (): JSX.Element => {
       <div className="flex justify-center mt-8 px-4">
         <Button
           asChild
-          className="bg-azul-marinho text-branco hover:bg-azul-marinho/90 rounded-[5px] px-8 py-4 shadow-md h-auto transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 w-full md:w-[600px]"
+          className="bg-dourado text-branco hover:bg-dourado/90 rounded-[5px] px-8 py-4 shadow-md h-auto transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 w-full md:w-[600px]"
         >
           <a
             href={whatsappLink}

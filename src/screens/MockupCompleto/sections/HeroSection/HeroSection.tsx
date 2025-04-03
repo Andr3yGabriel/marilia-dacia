@@ -26,7 +26,7 @@ export const HeroSection = (): JSX.Element => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="font-bold text-branco text-[22px] md:text-[27px] text-center tracking-[3.78px] leading-normal whitespace-nowrap font-h5-lato">
+              <span className="self-stretch font-h5-playfair font-[number:var(--h5-playfair-font-weight)] text-branco text-[length:var(--h5-playfair-font-size)] text-center tracking-[var(--h5-playfair-letter-spacing)] leading-[var(--h5-playfair-line-height)] [font-style:var(--h5-playfair-font-style)]">
                 Agendar consulta
               </span>
             </a>

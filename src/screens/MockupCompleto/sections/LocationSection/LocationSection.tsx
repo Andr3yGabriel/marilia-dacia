@@ -73,7 +73,7 @@ export const LocationSection = (): JSX.Element => {
                           href={item.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-block bg-dourado text-branco font-p-lato py-1 px-3 rounded-[5px] shadow-[0px_2px_3px_#00000030] transition duration-300 ease-in-out transform hover:bg-dourado/90 hover:scale-105 active:scale-95"
+                          className="inline-block bg-azul-marinho text-branco font-h5-playfair py-1 px-3 rounded-[5px] shadow-[0px_2px_3px_#00000030] transition duration-300 ease-in-out transform hover:bg-dourado/90 hover:scale-105 active:scale-95"
                         >
                           {item.content}
                         </a>
@@ -89,7 +89,7 @@ export const LocationSection = (): JSX.Element => {
             ))}
             <Button
               asChild
-              className="bg-dourado text-branco hover:bg-dourado/90 rounded-[5px] shadow-[0px_4px_4px_#00000040] transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 py-2 px-4"
+              className="bg-dourado text-branco hover:bg-dourado/90 rounded-[5px] shadow-[0px_4px_4px_#00000040] transition duration-300 ease-in-out transform hover:scale-105 active:scale-95 max-w-[350px]"
             >
               <a
                 href={whatsappLink}
