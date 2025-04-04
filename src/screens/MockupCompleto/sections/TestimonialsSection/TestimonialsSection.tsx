@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent } from "../../../../components/ui/card";
 
 export const TestimonialsSection = (): JSX.Element => {
@@ -25,7 +24,7 @@ export const TestimonialsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="relative w-full py-16 [background:url(..//relatos.png)_50%_50%_/_cover,linear-gradient(0deg,rgba(241,244,248,1)_0%,rgba(241,244,248,1)_100%)]">
+    <section className="relative w-full py-16 " style={{ background: "linear-gradient(rgba(241, 244, 248, 0.9), rgba(241, 244, 248, 0.9)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #F1F4F8" }}>
       <div className="flex flex-col items-center gap-6 mb-16 px-4">
         <h2 className="font-h1-lato font-[number:var(--h1-lato-font-weight)] text-azul-marinho text-[length:var(--h1-lato-font-size)] text-center tracking-[var(--h1-lato-letter-spacing)] leading-[var(--h1-lato-line-height)] [font-style:var(--h1-lato-font-style)]">
           O que dizem nossos pacientes
@@ -40,9 +39,8 @@ export const TestimonialsSection = (): JSX.Element => {
         {testimonials.map((testimonial) => (
           <Card
             key={testimonial.id}
-            className={`w-[340px] shadow-[0px_4px_4px_#00000040] rounded-lg ${
-              testimonial.variant === "blue" ? "bg-azul-marinho" : "bg-white"
-            }`}
+            className={`w-[340px] shadow-[0px_4px_4px_#00000040] rounded-lg ${testimonial.variant === "blue" ? "bg-azul-marinho" : "bg-white"
+              }`}
           >
             <CardContent className="flex flex-col items-start gap-8 p-8">
               <img
@@ -51,20 +49,18 @@ export const TestimonialsSection = (): JSX.Element => {
                 src="/cita--o.svg"
               />
               <p
-                className={`self-stretch font-h6-lato font-[number:var(--h6-lato-font-weight)] text-center tracking-[var(--h6-lato-letter-spacing)] leading-[var(--h6-lato-line-height)] [font-style:var(--h6-lato-font-style)] ${
-                  testimonial.variant === "blue"
-                    ? "text-white"
-                    : "text-azul-marinho"
-                } text-[length:var(--h6-lato-font-size)]`}
+                className={`self-stretch font-h6-lato font-[number:var(--h6-lato-font-weight)] text-center tracking-[var(--h6-lato-letter-spacing)] leading-[var(--h6-lato-line-height)] [font-style:var(--h6-lato-font-style)] ${testimonial.variant === "blue"
+                  ? "text-white"
+                  : "text-azul-marinho"
+                  } text-[length:var(--h6-lato-font-size)]`}
               >
                 {testimonial.text}
               </p>
               <p
-                className={`self-stretch [font-family:'Lato',Helvetica] font-medium text-[23px] text-right tracking-[3.22px] leading-[normal] ${
-                  testimonial.variant === "blue"
-                    ? "text-white"
-                    : "text-azul-marinho"
-                }`}
+                className={`self-stretch [font-family:'Lato',Helvetica] font-medium text-[23px] text-right tracking-[3.22px] leading-[normal] ${testimonial.variant === "blue"
+                  ? "text-white"
+                  : "text-azul-marinho"
+                  }`}
               >
                 {testimonial.author}
               </p>

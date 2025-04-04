@@ -77,9 +77,6 @@ export const MockupCompleto = (): JSX.Element => {
           <LocationSection />
         </section>
 
-        {/* Seção de Convênios */}
-        {/* Sem ID de navegação no momento */}
-        {/* Nota: O background aqui usa caminho relativo '../relatos.png', pode precisar ser ajustado para /relatos.png se estiver na pasta public */}
         <div className="w-full h-auto py-20" style={{ background: "linear-gradient(rgba(241, 244, 248, 0.9), rgba(241, 244, 248, 0.9)), url('/background.png') 0px -2.646px / 100% 258.847% no-repeat, #F1F4F8" }}> {/* Ajustado altura para auto e adicionado padding vertical */}
           <Card className="border-none shadow-none bg-transparent max-w-6xl mx-auto"> {/* Adicionado max-width e centralização */}
             <CardContent className="flex flex-col items-center justify-center h-full p-4 md:p-0">
