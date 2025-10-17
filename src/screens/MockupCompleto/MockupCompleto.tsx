@@ -15,8 +15,8 @@ export const MockupCompleto = (): JSX.Element => {
   const partnerLogos = [
     { src: "/logo-caasp-800x480-1.png", alt: "Logo CAASP", width: "w-20" },
     { src: "/logo-bensaude-1.png", alt: "Logo BenSaúde", width: "w-[269.33px]" },
-    { src: "/image-1.png", alt: "Logo Unimed", width: "w-24" }, // Assumindo Unimed pelo nome da imagem genérica
-    { src: "/logofundobranco--1--1.png", alt: "Logo Bradesco Saúde", width: "w-[213.76px]" }, // Assumindo Bradesco pelo nome
+    // { src: "/image-1.png", alt: "Logo Cassi", width: "w-24" },
+    // { src: "/logofundobranco--1--1.png", alt: "Logo Hapvida", width: "w-[213.76px]" },
     { src: "/apas-fernandopolis-logo--1--1.png", alt: "Logo Apas Fernandópolis", width: "w-[181.15px]" },
   ];
 
